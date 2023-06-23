@@ -1,6 +1,6 @@
 # Getting Started with the Vue Rating Component
 
-A quick start Vue project that shows how to get started with the Rating component.  This project includes a code snippet to create a new vue application and add syncfusion vue rating component to it. It also includes a code snippet to customize the component using its key features, and display custom icons. 
+A quick start Vue project that shows how to get started with the Vue Rating component from Syncfusion. This project includes a code snippet to create and customize the Vue Rating component. It also includes a code snippet to customize using its other key features, and display custom icons.
  
 Refer to the following documentation to learn about the Vue Rating component: 
 https://ej2.syncfusion.com/vue/documentation/rating/vue-3-getting-started
