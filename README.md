@@ -1,15 +1,24 @@
-# Getting Started with the Vue Rating Component
+# quickstart-rating-sample
 
-A quick start Vue project that shows how to get started with the Rating component.  This project includes a code snippet to create a new vue application and add syncfusion vue rating component to it. It also includes a code snippet to customize the component using its key features, and display custom icons. 
- 
-Refer to the following documentation to learn about the Blazor Pivot Table component: 
-https://ej2.syncfusion.com/vue/documentation/rating/vue-3-getting-started
+## Project setup
+```
+npm install
+```
 
-Check out this online example of the Blazor Pivot Table Component:
-https://ej2.syncfusion.com/vue/demos/#/bootstrap5/rating/default.html
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
 
-Make sure that you have the latest versions of NodeJS and Visual Studio Code in your machine before starting to work on this project.
+### Compiles and minifies for production
+```
+npm run build
+```
 
-### How to run this application?
+### Lints and fixes files
+```
+npm run lint
+```
 
-To run this application, you need to clone the `getting-started-with-the-vue-rating-component` repository and then open it in Visual Studio Code. Now, simply install all the necessary react packages into your current project using the `npm install` command and run your project using the `ng serve` command.
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
