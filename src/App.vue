@@ -1,31 +1,42 @@
 <template>
-  <ejs-rating id="rating" value="3" 
-                          :showLabel="true"
-                          labelPosition="Left"
-                          
-                          :allowReset="true"
-                          labelTemplate="<span>${value} out of 5</span>"
-                          tooltipTemplate="<span>${value} star</span>"
-                          emptyTemplate="<span class='custom-font sf-rating-heart'></span>"
-                          :readOnly = true
-                          :disabled = true
-                          ></ejs-rating>
- </template>
- 
- <script>
- 
- import { RatingComponent } from "@syncfusion/ej2-vue-inputs";
+  <div class="app-container">
+    <div class="content-wrapper">
+      <h2>Vue 3 Syncfusion Rating Component</h2>
+      <div class="rating-wrapper">
+        <ejs-rating id="rating" 
+                    :value="3" 
+                    :showLabel="true"
+                    labelPosition="Left"
+                    :allowReset="true"
+                    labelTemplate="<span>${value} out of 5</span>"
+                    tooltipTemplate="<span>${value} star</span>"
+                    emptyTemplate="<span class='custom-font sf-rating-heart'></span>"
+                    :readOnly="false"
+                    :disabled="false"
+                    @change="onRatingChange">
+        </ejs-rating>
+      </div>
+    </div>
+  </div>
+</template>
 
- export default {
-         name: "App",
-         components: {
-         "ejs-rating": RatingComponent
-         }
-   }
+<script>
+import { RatingComponent } from "@syncfusion/ej2-vue-inputs";
+
+export default {
+  name: "App",
+  components: {
+    "ejs-rating": RatingComponent
+  },
+  methods: {
+    onRatingChange(args) {
+      console.log('Rating changed to:', args.value);
+    }
+  }
+}
+</script>
  
- </script>
- 
- <style>
+<style>
  @import '../node_modules/@syncfusion/ej2-base/styles/material.css';
  @import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
  @import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
